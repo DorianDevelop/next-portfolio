@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import Window from "@/components/Window";
+import AboutMe from "@/components/sub-pages/about-me";
 
 const AppItem = ({icon, alt, title, order} : {icon:string, alt:string, title:string, order:number}) => {
     return (
@@ -28,6 +30,10 @@ const HomePage = () => {
                     <AppItem icon="/images/app/ask.svg" alt="ask-logo" title="Ask me Something" order={4}/>
                 </div>
             </div>
+
+            <Window title="About me">
+                <AboutMe/>
+            </Window>
         </section>
     )
 }
