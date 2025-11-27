@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DorianDevelop",
+  title: "FreeLance Web & App Developer | Full Stack Developer | DorianDevelop",
   description: "Dorian Faure Portfolio",
 };
 

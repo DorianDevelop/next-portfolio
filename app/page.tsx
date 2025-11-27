@@ -53,37 +53,37 @@ const HomePage = () => {
                 </Window>
             )}
             {openedApp == "studies" && (
-                <Window title="Previous Jobs" onClose={() => setOpenedApp(null)}>
+                <Window title="Studies" onClose={() => setOpenedApp(null)}>
                     <Studies/>
                 </Window>
             )}
             {openedApp == "skills" && (
-                <Window title="Previous Jobs" onClose={() => setOpenedApp(null)}>
+                <Window title="Skills" onClose={() => setOpenedApp(null)}>
                     <Skills/>
                 </Window>
             )}
             {openedApp == "opensource" && (
-                <Window title="Previous Jobs" onClose={() => setOpenedApp(null)}>
+                <Window title="Open Source Projects" onClose={() => setOpenedApp(null)}>
                     <OpenSourceProjects/>
                 </Window>
             )}
             {openedApp == "contact" && (
-                <Window title="Previous Jobs" onClose={() => setOpenedApp(null)}>
+                <Window title="Contact Me" onClose={() => setOpenedApp(null)}>
                     <ContactMe/>
                 </Window>
             )}
             {openedApp == "resume" && (
-                <Window title="Previous Jobs" onClose={() => setOpenedApp(null)}>
+                <Window title="Resume" onClose={() => setOpenedApp(null)}>
                     <Resume/>
                 </Window>
             )}
             {openedApp == "passions" && (
-                <Window title="Previous Jobs" onClose={() => setOpenedApp(null)}>
+                <Window title="Passions" onClose={() => setOpenedApp(null)}>
                     <Passions/>
                 </Window>
             )}
             {openedApp == "ask" && (
-                <Window title="Previous Jobs" onClose={() => setOpenedApp(null)}>
+                <Window title="Ask me" onClose={() => setOpenedApp(null)}>
                     <AskMe/>
                 </Window>
             )}

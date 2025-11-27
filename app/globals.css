@@ -156,10 +156,11 @@ body {
 
     background: #fff;
     border-radius: 4px;
-    overflow-y:auto;
+    overflow-y:hidden;
     overflow-x:hidden;
 
     .window-header{
+        height: 6.5vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -188,6 +189,11 @@ body {
                 transform: scale(1.1);
             }
         }
+    }
+
+    .window-content{
+        height: 73.5vh;
+        overflow-y: auto;
     }
 }
 
@@ -225,6 +231,62 @@ body {
             animation: colorChangeOutline 10s infinite;
         }
     }
+
+    .exp-container{
+        margin: 0.5rem 0;
+
+
+        .exp-header{
+            .exp-header-spacer{
+                width:32px;
+            }
+            .exp-header-arrow{
+                transition: transform 0.2s ease-in-out;
+                &.up{
+                    transform: rotate(180deg);
+                }
+            }
+
+            .orga-logo{
+                transform: scale(2) translateY(-5px);
+            }
+        }
+        .exp-content{
+            &.visible{
+                display: block;
+            }
+            &.invisible{
+                display: none;
+            }
+        }
+
+        .skills-container{
+            .skills-list{
+                li{
+                    color: white;
+                    padding: 0.2rem 0.6rem;
+                    background: #005e00;
+                    border-radius: 6px;
+                    cursor: default;
+
+                    &:hover{
+                        opacity: 0.9;
+                    }
+
+                    &.non-technical{
+                        background: #003d5e;
+                    }
+                }
+            }
+        }
+
+    }
+    .exp-spacer{
+        width: 250px;
+        height: 2px;
+        border-radius: 4px;
+        background: rgba(149, 149, 149, 0.56);
+    }
 }
 
 @keyframes colorChangeOutline {
@@ -235,3 +297,4 @@ body {
     80% {color:black}
     100% {color: red;}
 }
+
