@@ -219,6 +219,7 @@ body {
             top: -48px;
             transform: translateX(-50%) scale(0.99);
             color: blue;
+            opacity:0.5;
             z-index: 49;
 
             animation: colorChangeOutline 10s infinite;
