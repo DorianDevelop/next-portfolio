@@ -287,6 +287,69 @@ body {
         border-radius: 4px;
         background: rgba(149, 149, 149, 0.56);
     }
+
+    .skills-page-container{
+
+        .skill-mastery{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(25%) translateX(25%);
+            padding: 0.2rem 0.8rem;
+            border-radius: 6px;
+            color: white;
+            background: rgb(73, 73, 73);
+
+            z-index: 1;
+        }
+
+        .skills-page-content-item{
+            z-index: 10;
+            ul > li {
+                color: white;
+                padding: 0.1rem 0.4rem;
+                background: #4e4e4e;
+                border-radius: 6px;
+                cursor: default;
+                font-size: 0.75rem;
+
+                &:hover{
+                    opacity: 0.9;
+                }
+
+                &.special{
+                    background: #5300bc;
+                }
+                &.web{
+                    background: #003d5e;
+                }
+                &.prog{
+                    background: #095e00;
+                }
+                &.data{
+                    background: #5e5c00;
+                }
+                &.server{
+                    background: #323131;
+                }
+                &.lang{
+                    background: rgba(161, 25, 0, 0.85);
+                }
+                &.others{
+                    background: rgba(94, 0, 81, 0.85);
+                }
+
+                position: relative;
+
+                .flower-level{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translateY(-50%) translateX(50%);
+                }
+            }
+        }
+    }
 }
 
 @keyframes colorChangeOutline {
