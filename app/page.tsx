@@ -38,52 +38,52 @@ const HomePage = () => {
                 <div className="app-small-container right-items">
                     <AppItem icon="/images/app/contact.svg" alt="contact-me-logo" title="Contact me" order={1} onClick={() => setOpenedApp('contact')}/>
                     <AppItem icon="/images/app/resume.svg" alt="resume-logo" title="Resume" order={2} onClick={() => setOpenedApp('resume')}/>
-                    <AppItem icon="/images/app/passions.svg" alt="passions-logo" title="Passions" order={3} onClick={() => setOpenedApp('passions')}/>
-                    <AppItem icon="/images/app/ask.svg" alt="ask-logo" title="Ask me" order={4} onClick={() => setOpenedApp('ask')}/>
+                    <AppItem icon="/images/app/ask.svg" alt="ask-logo" title="Ask Me" order={3} onClick={() => setOpenedApp('ask')}/>
+                    <AppItem icon="/images/app/passions.svg" alt="passions-logo" title="Passions" order={4} onClick={() => setOpenedApp('passions')}/>
                 </div>
             </div>
             {openedApp == "about" && (
-                <Window title="About me" onClose={() => setOpenedApp(null)}>
+                <Window title="About me" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <AboutMe/>
                 </Window>
             )}
             {openedApp == "jobs" && (
-                <Window title="Previous Jobs" onClose={() => setOpenedApp(null)}>
+                <Window title="Previous Jobs" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <PreviousJob/>
                 </Window>
             )}
             {openedApp == "studies" && (
-                <Window title="Studies" onClose={() => setOpenedApp(null)}>
+                <Window title="Studies" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <Studies/>
                 </Window>
             )}
             {openedApp == "skills" && (
-                <Window title="Skills" onClose={() => setOpenedApp(null)}>
+                <Window title="Skills" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <Skills/>
                 </Window>
             )}
             {openedApp == "opensource" && (
-                <Window title="Open Source Projects" onClose={() => setOpenedApp(null)}>
+                <Window title="Open Source Projects" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <OpenSourceProjects/>
                 </Window>
             )}
             {openedApp == "contact" && (
-                <Window title="Contact Me" onClose={() => setOpenedApp(null)}>
+                <Window title="Contact Me" height={60} width={40} onClose={() => setOpenedApp(null)}>
                     <ContactMe/>
                 </Window>
             )}
             {openedApp == "resume" && (
-                <Window title="Resume" onClose={() => setOpenedApp(null)}>
+                <Window title="Resume" height={40} width={40} onClose={() => setOpenedApp(null)}>
                     <Resume/>
                 </Window>
             )}
             {openedApp == "passions" && (
-                <Window title="Passions" onClose={() => setOpenedApp(null)}>
+                <Window title="Passions" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <Passions/>
                 </Window>
             )}
             {openedApp == "ask" && (
-                <Window title="Ask me" onClose={() => setOpenedApp(null)}>
+                <Window title="Ask Me" height={50} width={40} onClose={() => setOpenedApp(null)}>
                     <AskMe/>
                 </Window>
             )}
