@@ -30,7 +30,22 @@ const HomePage = () => {
     //const [openedApp, setOpenedApp] = useState<string | null>(null);
     const [windows, setWindows] = useState<WindowItem[]>([]);
 
+    const focusWindow = (title: string) => {
+        setWindows((prev) => {
+            const idx = prev.findIndex(w => w.title === title);
+            if (idx === -1) return prev;
+            const item = prev[idx];
+            const rest = prev.filter((_, i) => i !== idx);
+            return [...rest, item];
+        });
+    };
+
     const addWindow = (title: string) => {
+        const exists = windows.some(w => w.title === title);
+        if (exists) {
+            focusWindow(title);
+            return;
+        }
         const window = {title, isOpened: true};
         setWindows([...windows, window]);
     }
@@ -40,6 +55,7 @@ const HomePage = () => {
     }
 
     const openedApp = windows.filter(window => window.isOpened);
+    const getZIndex = (title: string) => 1000 + Math.max(0, windows.findIndex(w => w.title === title));
 
     return (
         <section id="app-body">
@@ -59,47 +75,47 @@ const HomePage = () => {
                 </div>
             </div>
             {openedApp.find(window => window.title === "about") && (
-                <Window title="Présentation" height={70} width={50} onClose={() => removeWindow('about')}>
+                <Window title="Présentation" height={70} width={50} onClose={() => removeWindow('about')} zIndex={getZIndex('about')} onFocus={() => focusWindow('about')}>
                     <AboutMe/>
                 </Window>
             )}
             {openedApp.find(window => window.title === "jobs") && (
-                <Window title="Expériences précédentes" height={80} width={60} onClose={() => removeWindow('jobs')}>
+                <Window title="Expériences précédentes" height={80} width={60} onClose={() => removeWindow('jobs')} zIndex={getZIndex('jobs')} onFocus={() => focusWindow('jobs')}>
                     <PreviousJob/>
                 </Window>
             )}
             {openedApp.find(window => window.title === "studies") && (
-                <Window title="Études" height={80} width={60} onClose={() => removeWindow('studies')}>
+                <Window title="Études" height={80} width={60} onClose={() => removeWindow('studies')} zIndex={getZIndex('studies')} onFocus={() => focusWindow('studies')}>
                     <Studies/>
                 </Window>
             )}
             {openedApp.find(window => window.title === "skills") && (
-                <Window title="Compétences" height={80} width={60} onClose={() => removeWindow('skills')}>
+                <Window title="Compétences" height={80} width={60} onClose={() => removeWindow('skills')} zIndex={getZIndex('skills')} onFocus={() => focusWindow('skills')}>
                     <Skills/>
                 </Window>
             )}
             {openedApp.find(window => window.title === "opensource") && (
-                <Window title="Projets open-source" height={80} width={60} onClose={() => removeWindow('opensource')}>
+                <Window title="Projets open-source" height={80} width={60} onClose={() => removeWindow('opensource')} zIndex={getZIndex('opensource')} onFocus={() => focusWindow('opensource')}>
                     <OpenSourceProjects/>
                 </Window>
             )}
             {openedApp.find(window => window.title === "contact") && (
-                <Window title="Me contacter" height={60} width={40} onClose={() => removeWindow('contact')}>
+                <Window title="Me contacter" height={60} width={40} onClose={() => removeWindow('contact')} zIndex={getZIndex('contact')} onFocus={() => focusWindow('contact')}>
                     <ContactMe/>
                 </Window>
             )}
             {openedApp.find(window => window.title === "resume") && (
-                <Window title="CV" height={40} width={40} onClose={() => removeWindow('resume')}>
+                <Window title="CV" height={40} width={40} onClose={() => removeWindow('resume')} zIndex={getZIndex('resume')} onFocus={() => focusWindow('resume')}>
                     <Resume/>
                 </Window>
             )}
             {openedApp.find(window => window.title === "passions") && (
-                <Window title="Passions" height={80} width={60} onClose={() => removeWindow('passions')}>
+                <Window title="Passions" height={80} width={60} onClose={() => removeWindow('passions')} zIndex={getZIndex('passions')} onFocus={() => focusWindow('passions')}>
                     <Passions/>
                 </Window>
             )}
             {openedApp.find(window => window.title === "ask") && (
-                <Window title="Demandez-moi" height={50} width={40} onClose={() => removeWindow('ask')}>
+                <Window title="Demandez-moi" height={50} width={40} onClose={() => removeWindow('ask')} zIndex={getZIndex('ask')} onFocus={() => focusWindow('ask')}>
                     <AskMe/>
                 </Window>
             )}

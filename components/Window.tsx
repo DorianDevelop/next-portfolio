@@ -9,9 +9,12 @@ interface WindowProps {
     width: number;
     children: React.ReactNode; // The content inside the window
     onClose: () => void;
+    // New props to support z-index stacking and focus behavior
+    zIndex?: number;
+    onFocus?: () => void;
 }
 
-const Window = ({title, height, width, children, onClose}: WindowProps) => {
+const Window = ({title, height, width, children, onClose, zIndex = 1000, onFocus}: WindowProps) => {
     const containerRef = useRef<HTMLElement | null>(null);
     const headerRef = useRef<HTMLElement | null>(null);
 
@@ -103,6 +106,8 @@ const Window = ({title, height, width, children, onClose}: WindowProps) => {
     const onHeaderMouseDown = (e: React.MouseEvent) => {
         // Only start dragging with the primary button
         if (e.button !== 0) return;
+        // When interacting with the header, bring to front
+        onFocus?.();
         startDragging(e.clientX, e.clientY);
     };
 
@@ -110,6 +115,7 @@ const Window = ({title, height, width, children, onClose}: WindowProps) => {
         e.preventDefault();
         const touch = e.touches[0];
         if (!touch) return;
+        onFocus?.();
         startDragging(touch.clientX, touch.clientY);
     };
 
@@ -121,11 +127,17 @@ const Window = ({title, height, width, children, onClose}: WindowProps) => {
         left: isCentered ? undefined : `${pos.left}px`,
         transform: isCentered ? 'translate(-50%, -50%)' : 'none',
         position: 'absolute',
-        zIndex: 1000,
+        zIndex: zIndex,
     };
 
     return (
-        <section id="window" ref={(el) => (containerRef.current = el)} style={style}>
+        <section
+            id="window"
+            ref={(el) => (containerRef.current = el)}
+            style={style}
+            onMouseDown={() => onFocus?.()}
+            onTouchStart={() => onFocus?.()}
+        >
             <section
                 className="window-header"
                 ref={(el) => (headerRef.current = el)}
