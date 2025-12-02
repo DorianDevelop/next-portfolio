@@ -152,7 +152,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background: #fff;
+    background: #f1f1f1;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.50);
     border-radius: 4px;
     overflow-y:hidden;
     overflow-x:hidden;
