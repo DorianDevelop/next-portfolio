@@ -7,14 +7,14 @@ const Skills = () => {
         <section id="window-content">
             <div className="content">
                 <div className="skills-page-container py-2">
-                    <h2 className="text-xl text-center">Here are my different skills</h2>
-                    <p className="text-xs text-center italic mb-2">I do not pretend to master all of them, far from that.</p>
+                    <h2 className="text-xl text-center">Voici mes différentes compétences</h2>
+                    <p className="text-xs text-center italic mb-2">Je ne prétends pas toutes les maîtriser, loin de là.</p>
                     <div className="skill-mastery">
-                        <p className="text-center">Level chart:</p>
+                        <p className="text-center">Échelle de maîtrise :</p>
                         <p className="text-xs">
-                            Red flower : <span className="text-red-500 font-bold">Advanced</span> <br/>
-                            Blue flower : <span className="text-blue-500 font-bold">Intermediate</span> <br/>
-                            Yellow flower : <span className="text-yellow-500 font-bold">Beginner</span>
+                            Fleur rouge : <span className="text-red-500 font-bold">Avancé</span> <br/>
+                            Fleur bleue : <span className="text-blue-500 font-bold">Intermédiaire</span> <br/>
+                            Fleur jaune : <span className="text-yellow-500 font-bold">Débutant</span>
                         </p>
                     </div>
                     <div className="skills-page-content flex flex-col gap-3">
@@ -71,7 +71,7 @@ const Skills = () => {
                             </ul>
                         </div>
                         <div className="skills-page-content-item">
-                            <h1 className="text-l underline mb-1">Programming</h1>
+                            <h1 className="text-l underline mb-1">Programmation</h1>
                             <ul className="flex flex-wrap gap-2">
                                 <li className="prog">C
                                     <Image src="/icons/yellow-flower.svg" alt="flower-icon" width={24} height={24} className="flower-level"/>
@@ -97,7 +97,7 @@ const Skills = () => {
                             </ul>
                         </div>
                         <div className="skills-page-content-item">
-                            <h1 className="text-l underline mb-1">Others</h1>
+                            <h1 className="text-l underline mb-1">Autres</h1>
                             <ul className="flex flex-wrap gap-2">
                                 <li className="server">Docker
                                     <Image src="/icons/blue-flower.svg" alt="flower-icon" width={24} height={24} className="flower-level"/>
@@ -146,7 +146,7 @@ const Skills = () => {
                             </ul>
                         </div>
                         <div className="skills-page-content-item">
-                            <h1 className="text-l underline mb-1">Language</h1>
+                            <h1 className="text-l underline mb-1">Langues</h1>
                             <ul className="flex flex-wrap gap-2">
                                 <li className="special">French
                                     <Image src="/icons/red-flower.svg" alt="flower-icon" width={24} height={24} className="flower-level"/>

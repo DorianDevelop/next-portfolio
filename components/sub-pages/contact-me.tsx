@@ -5,7 +5,7 @@ const ContactMe = () => {
     return (
         <section id="window-content">
             <div className="content">
-                <h1 className="text-4xl text-center font-bold mt-6">Interested in my profile?</h1>
+                <h1 className="text-4xl text-center font-bold mt-6">Intéressé par mon profil ?</h1>
                 <div className="flex gap-6 justify-center mt-8">
                     <a href="https://github.com/DorianDevelop" className="contact-item flex flex-col items-center gap-1 mt-5">
                         <Image className="contact-icon" src="/icons/github.svg" alt="github-icon" width="48" height="48" />
@@ -24,7 +24,7 @@ const ContactMe = () => {
                     <Image className="contact-icon" src="/icons/email.svg" alt="email-icon" width="48" height="48" />
                     <p className="text-xs">dorianf.develop@gmail.com</p>
                 </a>
-                <p className="text-m text-center mt-12">I’ll try my best to answer you in less than two days. Thank you.</p>
+                <p className="text-m text-center mt-12">Je ferai de mon mieux pour vous répondre en moins de deux jours. Merci.</p>
             </div>
         </section>
     )

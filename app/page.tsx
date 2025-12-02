@@ -29,51 +29,51 @@ const HomePage = () => {
         <section id="app-body">
             <div className="app-grid">
                 <div className="app-small-container left-items">
-                    <AppItem icon="/images/app/about.svg" alt="about-me-logo" title="About me" order={1} onClick={() => setOpenedApp('about')}/>
-                    <AppItem icon="/images/app/jobs.svg" alt="previous-job-logo" title="Previous Jobs" order={2} onClick={() => setOpenedApp('jobs')}/>
-                    <AppItem icon="/images/app/studies.svg" alt="studies-logo" title="Studies" order={3} onClick={() => setOpenedApp('studies')}/>
-                    <AppItem icon="/images/app/skills.svg" alt="skills-logo" title="Skills" order={4} onClick={() => setOpenedApp('skills')}/>
-                    <AppItem icon="/images/app/open-source.svg" alt="open-source-projects-logo" title="Open Source Projects" order={5} onClick={() => setOpenedApp('opensource')}/>
+                    <AppItem icon="/images/app/about.svg" alt="about-me-logo" title="Présentation" order={1} onClick={() => setOpenedApp('about')}/>
+                    <AppItem icon="/images/app/jobs.svg" alt="previous-job-logo" title="Expériences précédentes" order={2} onClick={() => setOpenedApp('jobs')}/>
+                    <AppItem icon="/images/app/studies.svg" alt="studies-logo" title="Études" order={3} onClick={() => setOpenedApp('studies')}/>
+                    <AppItem icon="/images/app/skills.svg" alt="skills-logo" title="Compétences" order={4} onClick={() => setOpenedApp('skills')}/>
+                    <AppItem icon="/images/app/open-source.svg" alt="open-source-projects-logo" title="Projets open-source" order={5} onClick={() => setOpenedApp('opensource')}/>
                 </div>
                 <div className="app-small-container right-items">
-                    <AppItem icon="/images/app/contact.svg" alt="contact-me-logo" title="Contact me" order={1} onClick={() => setOpenedApp('contact')}/>
-                    <AppItem icon="/images/app/resume.svg" alt="resume-logo" title="Resume" order={2} onClick={() => setOpenedApp('resume')}/>
-                    <AppItem icon="/images/app/ask.svg" alt="ask-logo" title="Ask Me" order={3} onClick={() => setOpenedApp('ask')}/>
+                    <AppItem icon="/images/app/contact.svg" alt="contact-me-logo" title="Me contacter" order={1} onClick={() => setOpenedApp('contact')}/>
+                    <AppItem icon="/images/app/resume.svg" alt="resume-logo" title="CV" order={3} onClick={() => setOpenedApp('resume')}/>
+                    <AppItem icon="/images/app/ask.svg" alt="ask-logo" title="Demandez-moi" order={2} onClick={() => setOpenedApp('ask')}/>
                     <AppItem icon="/images/app/passions.svg" alt="passions-logo" title="Passions" order={4} onClick={() => setOpenedApp('passions')}/>
                 </div>
             </div>
             {openedApp == "about" && (
-                <Window title="About me" height={80} width={60} onClose={() => setOpenedApp(null)}>
+                <Window title="Présentation" height={70} width={50} onClose={() => setOpenedApp(null)}>
                     <AboutMe/>
                 </Window>
             )}
             {openedApp == "jobs" && (
-                <Window title="Previous Jobs" height={80} width={60} onClose={() => setOpenedApp(null)}>
+                <Window title="Expériences précédentes" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <PreviousJob/>
                 </Window>
             )}
             {openedApp == "studies" && (
-                <Window title="Studies" height={80} width={60} onClose={() => setOpenedApp(null)}>
+                <Window title="Études" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <Studies/>
                 </Window>
             )}
             {openedApp == "skills" && (
-                <Window title="Skills" height={80} width={60} onClose={() => setOpenedApp(null)}>
+                <Window title="Compétences" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <Skills/>
                 </Window>
             )}
             {openedApp == "opensource" && (
-                <Window title="Open Source Projects" height={80} width={60} onClose={() => setOpenedApp(null)}>
+                <Window title="Projets open-source" height={80} width={60} onClose={() => setOpenedApp(null)}>
                     <OpenSourceProjects/>
                 </Window>
             )}
             {openedApp == "contact" && (
-                <Window title="Contact Me" height={60} width={40} onClose={() => setOpenedApp(null)}>
+                <Window title="Me contacter" height={60} width={40} onClose={() => setOpenedApp(null)}>
                     <ContactMe/>
                 </Window>
             )}
             {openedApp == "resume" && (
-                <Window title="Resume" height={40} width={40} onClose={() => setOpenedApp(null)}>
+                <Window title="CV" height={40} width={40} onClose={() => setOpenedApp(null)}>
                     <Resume/>
                 </Window>
             )}
@@ -83,7 +83,7 @@ const HomePage = () => {
                 </Window>
             )}
             {openedApp == "ask" && (
-                <Window title="Ask Me" height={50} width={40} onClose={() => setOpenedApp(null)}>
+                <Window title="Demandez-moi" height={50} width={40} onClose={() => setOpenedApp(null)}>
                     <AskMe/>
                 </Window>
             )}

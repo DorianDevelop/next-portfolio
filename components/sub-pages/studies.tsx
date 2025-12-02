@@ -14,20 +14,20 @@ const Studies = () => {
                         <Image className="orga-logo" src="/images/orga/iut.png" alt="iut-logo" width="32" height="32" />
 
                         <div>
-                            <h1 className="exp-title text-3xl text-center">Bachelor in Computer Science</h1>
-                            <h4 className="exp-sub-title text-xl text-center mb-5">IUT of Le Puy-en-Velay - 2021-2024</h4>
+                            <h1 className="exp-title text-3xl text-center">BUT Informatique Graphique</h1>
+                            <h4 className="exp-sub-title text-xl text-center mb-5">IUT du Le Puy-en-Velay - 2021-2024</h4>
                         </div>
                         <Image onClick={() => {setDisplayFirstSchool(!displayFirstSchool)}} className="exp-header-arrow cursor-pointer" src="/icons/arrow-down.svg" alt="arrow-down-icon" width="32" height="32" />
                     </div>
                     <div className={`exp-content ${displayFirstSchool ? 'visible' : 'invisible'}`}>
                         <h5 className="text-xl underline">Description</h5>
-                        <p className="exp-description mb-5">After completing my final year of high school and obtaining my Technological Baccalaureate with “Very Good” honors, I decided to pursue my dream of becoming a developer by enrolling in a Computer Science program at university. Over the next three years, I learned the fundamentals of computer science, along with communication and professional skills. During my second year, I spent four months in Canada, where I studied (more details below). In the final year of my degree, I had the opportunity to complete an internship, which gave me my first real experience of what working life is like.</p>
+                        <p className="exp-description mb-5">Après avoir terminé ma dernière année de lycée et obtenu mon Baccalauréat Technologique avec mention “Très Bien”, j’ai décidé de poursuivre mon rêve de devenir développeur en entrant à l’université en Informatique. Au cours des trois années suivantes, j’ai appris les bases de l’informatique, ainsi que des compétences en communication et en milieu professionnel. Durant ma deuxième année, j’ai passé quatre mois au Canada, où j’ai étudié (plus de détails ci-dessous). Lors de ma dernière année, j’ai eu l’occasion de faire un stage, qui m’a offert ma première vraie expérience du monde du travail.</p>
                         <div className="skills-container mb-5">
-                            <h5 className="text-xl underline">Learned skills</h5>
+                            <h5 className="text-xl underline">Compétences apprises</h5>
                             <ul className="skills-list flex flex-wrap gap-2">
                                 <li>Full-Stack</li>
                                 <li>VueJS - ReactJS - ExpressJS - PHP</li>
-                                <li>Database - Multiple Language</li>
+                                <li>Database - Plusieurs langages</li>
                                 <li>C# & Unity & Unreal</li>
                                 <li>C++ & OpenGL</li>
                                 <li>GitLab</li>
@@ -36,11 +36,11 @@ const Studies = () => {
                                 <li>3D - 3Ds Max - Blender</li>
                                 <li>Math - MatLab</li>
                                 <li className="non-technical">Communication</li>
-                                <li className="non-technical">Ent-to-end projects</li>
+                                <li className="non-technical">Mener un projet de bout en bout</li>
                             </ul>
                         </div>
-                        <h5 className="text-xl underline">Personal Feedback</h5>
-                        <p>This was a very rewarding degree. My first years taught me a lot, and the last two provided excellent opportunities and valuable work-life lessons.</p>
+                        <h5 className="text-xl underline">Retour personnel</h5>
+                        <p>Ce diplôme a été très enrichissant. Mes premières années m’ont beaucoup appris, et les deux dernières m’ont offert d’excellentes opportunités et de précieuses leçons sur la vie professionnelle.</p>
                     </div>
 
                 </div>
@@ -49,27 +49,27 @@ const Studies = () => {
                     <div className="exp-header flex justify-between items-center">
                         <Image className="orga-logo" src="/images/orga/cegep.svg" alt="cegep-logo" width="32" height="32" />
                         <div>
-                            <h1 className="exp-title text-3xl text-center">Pre-university College</h1>
-                            <h4 className="exp-sub-title text-xl text-center mb-5">CEGEP of Chicoutimi - 2023</h4>
+                            <h1 className="exp-title text-3xl text-center">Collège pré-universitaire</h1>
+                            <h4 className="exp-sub-title text-xl text-center mb-5">CEGEP de Chicoutimi - 2023</h4>
                         </div>
                         <Image onClick={() => {setDisplaySecondSchool(!displaySecondSchool)}} className="exp-header-arrow cursor-pointer" src="/icons/arrow-down.svg" alt="arrow-down-icon" width="32" height="32" />
                     </div>
                     <div className={`exp-content ${displaySecondSchool ? 'visible' : 'invisible'}`}>
                         <h5 className="text-xl underline">Description</h5>
-                        <p className="exp-description mb-5">From January to April 2023, I participated in an exchange program in Canada, studying at the CEGEP of Chicoutimi. In terms of pure skill level, the courses were slightly below what I was used to at my current school, as many concepts were familiar to me. However, the approach was completely different, and in some areas the material was explored in much greater depth. The experience was amazing, with many end-to-end projects, a lot of autonomous work, and approachable teachers who genuinely enjoyed teaching.</p>
+                        <p className="exp-description mb-5">De janvier à avril 2023, j’ai participé à un programme d’échange au Canada, où j’ai étudié au CEGEP de Chicoutimi. En termes de niveau pur, les cours étaient légèrement en dessous de ceux de mon école actuelle, car beaucoup de notions m’étaient déjà familières. Cependant, l’approche était complètement différente, et certains sujets étaient explorés avec beaucoup plus de profondeur. L’expérience était formidable, avec de nombreux projets complets, beaucoup de travail autonome, et des enseignants accessibles qui aimaient vraiment enseigner.</p>
                         <div className="skills-container mb-5">
-                            <h5 className="text-xl underline">Learned-Used skills</h5>
+                            <h5 className="text-xl underline">Compétences apprises/utilisées</h5>
                             <ul className="skills-list flex flex-wrap gap-2">
                                 <li>Full-Stack</li>
-                                <li>Database - Multiple Language</li>
+                                <li>Database - Plusieurs langages</li>
                                 <li>C# & ASP.NET Core MVC</li>
                                 <li>jQuery - PHP</li>
                                 <li>GitLab</li>
-                                <li className="non-technical">Daily use of English</li>
+                                <li className="non-technical">Utilisation quotidienne de l’anglais</li>
                             </ul>
                         </div>
-                        <h5 className="text-xl underline">Personal Feedback</h5>
-                        <p>I would love to go to a different country again, to work there for a few months—or maybe longer, who knows.</p>
+                        <h5 className="text-xl underline">Retour personnel</h5>
+                        <p>J’aimerais beaucoup repartir dans un autre pays, pour y travailler quelques mois ou peut-être plus longtemps, qui sait.</p>
                     </div>
 
                 </div>
@@ -78,20 +78,20 @@ const Studies = () => {
                     <div className="exp-header flex justify-between items-center">
                         <Image className="orga-logo" src="/images/orga/isima.png" alt="isima-logo" width="32" height="32" />
                         <div>
-                            <h1 className="exp-title text-3xl text-center">Engineering School</h1>
+                            <h1 className="exp-title text-3xl text-center">École d’ingénieurs Informatique</h1>
                             <h4 className="exp-sub-title text-xl text-center mb-5">ISIMA - 2024-2025</h4>
                         </div>
                         <Image onClick={() => {setDisplayThirdSchool(!displayThirdSchool)}} className="exp-header-arrow cursor-pointer" src="/icons/arrow-down.svg" alt="arrow-down-icon" width="32" height="32" />
                     </div>
                     <div className={`exp-content ${displayThirdSchool ? 'visible' : 'invisible'}`}>
                         <h5 className="text-xl underline">Description</h5>
-                        <p className="exp-description mb-5">I wasn’t sure if this was truly what I wanted, but I still took a chance and joined an engineering school through their internship program. The school and teachers were great, but I often felt like I wasn’t learning new technical skills. Most of what I learned was either outdated (or not really useful), though interesting for general knowledge, or focused on management and communication aspects of being an engineer. Unfortunately, that wasn’t the path for me, so I decided to leave after one year.</p>
+                        <p className="exp-description mb-5">Je n’étais pas certain que ce soit vraiment ce que je voulais, mais j’ai quand même tenté ma chance en rejoignant une école d’ingénieurs via leur programme en alternance. L’école et les enseignants étaient très bien, mais j’avais souvent l’impression de ne pas apprendre de nouvelles compétences techniques. La plupart de ce que j’apprenais était soit dépassé (ou peu utile), même si intéressant pour la culture générale, soit centré sur la gestion et la communication liées au métier d’ingénieur. Ce n’était malheureusement pas la voie qui me correspondait, alors j’ai décidé de partir après un an.</p>
                         <div className="skills-container mb-5">
-                            <h5 className="text-xl underline">Learned-Relearned skills</h5>
+                            <h5 className="text-xl underline">Compétences apprises/révisées</h5>
                             <ul className="skills-list flex flex-wrap gap-2">
-                                <li>Advanced Math - For IT</li>
+                                <li>Mathématiques avancées - IT</li>
                                 <li>Full-Stack</li>
-                                <li>Database - Multiple Language</li>
+                                <li>Database - Plusieurs langages</li>
                                 <li>C# & Unity</li>
                                 <li>C++ & OpenGL</li>
                                 <li>Angular JS & ASP.NET Core</li>
@@ -100,8 +100,8 @@ const Studies = () => {
                                 <li className="non-technical">Management</li>
                             </ul>
                         </div>
-                        <h5 className="text-xl underline">Personal Feedback</h5>
-                        <p>This was a good experience, it was easier than expected but less interesting too.</p>
+                        <h5 className="text-xl underline">Retour personnel</h5>
+                        <p>Ce fut une bonne expérience, plus simple que prévu mais aussi moins intéressante.</p>
                     </div>
 
                 </div>

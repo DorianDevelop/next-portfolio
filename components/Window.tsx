@@ -124,6 +124,7 @@ const Window = ({title, height, width, children, onClose}: WindowProps) => {
         zIndex: 1000,
     };
 
+    // @ts-ignore
     return (
         <section id="window" ref={(el) => (containerRef.current = el)} style={style}>
             <section

@@ -20,7 +20,7 @@ const OpenSourceProjects = () => {
                     </div>
                     <div className="project" onClick={() => {window.open("https://github.com/DorianDevelop/dev-events-nextjs16-crash-course", '_blank')?.focus();}}>
                         <Image src="/images/crash-course.png" alt="project-image" width={256} height={256} className="project-image"/>
-                        <h1 className="text-center text-xl">Crash Course</h1>
+                        <h1 className="text-center text-xl">Projet d'apprentissage</h1>
                         <div className="skills-used-list">
                             <ul>
                                 <li>Full-Stack</li>
