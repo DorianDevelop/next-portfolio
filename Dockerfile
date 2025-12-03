@@ -14,6 +14,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 ENV PORT=3000
+ENV HOST=0.0.0.0
 
 COPY package*.json ./
 RUN npm install --omit=dev
@@ -23,4 +24,5 @@ COPY --from=builder /app/public ./public
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+# Ensure Next.js binds to all interfaces inside the container
+CMD ["npm", "run", "start", "--", "-H", "0.0.0.0", "-p", "3000"]

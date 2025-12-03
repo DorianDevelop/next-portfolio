@@ -8,5 +8,27 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
+      - HOST=0.0.0.0
     ports:
       - "3000:3000"
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: caddy-reverse-proxy
+    restart: always
+    depends_on:
+      - nextjs
+    ports:
+      - "80:80"
+      # Uncomment the following line if you configure TLS with real domains and want HTTPS
+      # - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      # Optional persistent storage for Caddy (certs, etc.)
+      # - caddy_data:/data
+      # - caddy_config:/config
+
+# Optional named volumes for Caddy persistence when enabling TLS/HTTPS
+# volumes:
+#   caddy_data:
+#   caddy_config:
