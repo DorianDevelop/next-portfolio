@@ -22,7 +22,7 @@ body {
 #app-body {
     width: 100vw;
     height: 100vh;
-    background-image: url("/images/red_black_bg.jpg");
+    background-image: url("/images/bg_logo.jpg");
     background-size: cover;
 
     .app-grid{
@@ -165,7 +165,7 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 0.5rem;
-        background: rgba(250, 125, 125, 0.58);
+        background: rgba(236, 90, 37, 0.70);
 
         cursor: move;
 
@@ -201,7 +201,7 @@ body {
     padding: 1rem;
 
     .content{
-        width: 680px;
+        width: 90%;
         margin: 0 auto;
     }
 

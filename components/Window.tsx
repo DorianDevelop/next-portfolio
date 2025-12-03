@@ -5,7 +5,6 @@ import React, {useCallback, useEffect, useRef, useState} from "react";
 // Interface for the props
 interface WindowProps {
     title: string;
-    height: number;
     width: number;
     children: React.ReactNode; // The content inside the window
     onClose: () => void;
@@ -14,7 +13,7 @@ interface WindowProps {
     onFocus?: () => void;
 }
 
-const Window = ({title, height, width, children, onClose, zIndex = 1000, onFocus}: WindowProps) => {
+const Window = ({title, width, children, onClose, zIndex = 1000, onFocus}: WindowProps) => {
     const containerRef = useRef<HTMLElement | null>(null);
     const headerRef = useRef<HTMLElement | null>(null);
 
@@ -120,7 +119,6 @@ const Window = ({title, height, width, children, onClose, zIndex = 1000, onFocus
     };
 
     const style: React.CSSProperties = {
-        height: `${height}vh`,
         width: `${width}vw`,
         // When centered, rely on CSS (#window) transform rules. When dragged, use explicit positioning.
         top: isCentered ? undefined : `${pos.top}px`,

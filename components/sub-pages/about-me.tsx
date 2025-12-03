@@ -17,6 +17,7 @@ const AboutMe = () => {
                 <p className="text-center px-14 mt-10">
                     Si vous cherchez quelqu’un capable de créer le site ou l’application dont vous avez besoin et que vous méritez, ce serait un plaisir de vous aider et de vous accompagner tout au long du processus.
                 </p>
+                <p className="text-xs text-center mt-10 text-gray-500">(Ce site est encore en développement, il se peut qu’il y ait des bugs. Le responsive n’a pas encore été conçu pour les petits appareils. Merci de votre compréhension.)</p>
             </div>
         </section>
     )
