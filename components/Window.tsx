@@ -131,14 +131,14 @@ const Window = ({title, width, children, onClose, zIndex = 1000, onFocus}: Windo
     return (
         <section
             id="window"
-            ref={(el) => (containerRef.current = el)}
+            ref={(el) => { containerRef.current = el }}
             style={style}
             onMouseDown={() => onFocus?.()}
             onTouchStart={() => onFocus?.()}
         >
             <section
                 className="window-header"
-                ref={(el) => (headerRef.current = el)}
+                ref={(el) => { headerRef.current = el }}
                 onMouseDown={onHeaderMouseDown}
                 onTouchStart={onHeaderTouchStart}
                 role="button"
