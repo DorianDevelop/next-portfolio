@@ -299,7 +299,7 @@ body {
             padding: 0.2rem 0.8rem;
             border-radius: 6px;
             color: white;
-            background: rgb(73, 73, 73);
+            background: rgb(186, 161, 161);
 
             z-index: 1;
         }
@@ -359,6 +359,9 @@ body {
         }
         .yellow-flower-color{
             color: #D9FF00;
+        }
+        .purple-flower-color{
+            color: #7D00CB;
         }
     }
 

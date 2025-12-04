@@ -73,7 +73,9 @@ const HomePage = () => {
                     {false && (
                         <AppItem icon="/images/app/ask.svg" alt="ask-logo" title="Demandez-moi" order={4} onClick={() => addWindow('ask')}/>
                     )}
-                    <AppItem icon="/images/app/passions.svg" alt="passions-logo" title="Passions" order={3} onClick={() => addWindow('passions')}/>
+                    {false && (
+                        <AppItem icon="/images/app/passions.svg" alt="passions-logo" title="Passions" order={3} onClick={() => addWindow('passions')}/>
+                    )}
                 </div>
             </div>
             {openedApp.find(window => window.title === "about") && (

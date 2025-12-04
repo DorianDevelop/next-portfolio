@@ -14,7 +14,8 @@ const Skills = () => {
                         <p className="text-xs">
                             Fleur rouge : <span className="red-flower-color font-bold">Avancé</span> <br/>
                             Fleur bleue : <span className="blue-flower-color font-bold">Intermédiaire</span> <br/>
-                            Fleur jaune : <span className="yellow-flower-color font-bold">Débutant</span>
+                            Fleur jaune : <span className="yellow-flower-color font-bold">Débutant</span> <br/>
+                            Fleur violette : <span className="purple-flower-color font-bold">Soft skill</span>
                         </p>
                     </div>
                     <div className="skills-page-content flex flex-col gap-3">
