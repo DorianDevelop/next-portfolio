@@ -109,7 +109,7 @@ body {
     }
 }
 
-@media (max-width: 1450px) {
+@media (max-height: 600px) {
     .left-items{
         .order-item{
             &.order-4{
