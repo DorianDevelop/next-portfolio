@@ -478,7 +478,6 @@ body {
 
             .project-image{
                 margin:auto;
-                max-width: 200px;
             }
 
             &:hover{
@@ -527,6 +526,13 @@ body {
 
         .content{
             width: 95%;
+        }
+    }
+
+    .projects-container{
+
+        .project {
+            max-width: 90% !important;
         }
     }
 }
