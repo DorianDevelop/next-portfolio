@@ -5,7 +5,7 @@ const AboutMe = () => {
     return (
         <section id="window-content">
             <div className="content">
-                <h1 className="text-4xl text-center font-bold mt-3">Salut ! Je suis Dorian</h1>
+                <h1 className="text-4xl text-center font-bold mt-3">Bonjour ! Je suis Dorian</h1>
                 <h5 className="text-2xl text-center font-bold">Développeur Web & App</h5>
                 <div className="selfie-container">
                     <svg width="202" height="350" viewBox="0 0 455 417" fill="none" xmlns="http://www.w3.org/2000/svg" className="selfie-outline">
