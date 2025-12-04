@@ -12,9 +12,9 @@ const Skills = () => {
                     <div className="skill-mastery">
                         <p className="text-center">Échelle de maîtrise :</p>
                         <p className="text-xs">
-                            Fleur rouge : <span className="text-red-500 font-bold">Avancé</span> <br/>
-                            Fleur bleue : <span className="text-blue-500 font-bold">Intermédiaire</span> <br/>
-                            Fleur jaune : <span className="text-yellow-500 font-bold">Débutant</span>
+                            Fleur rouge : <span className="red-flower-color font-bold">Avancé</span> <br/>
+                            Fleur bleue : <span className="blue-flower-color font-bold">Intermédiaire</span> <br/>
+                            Fleur jaune : <span className="yellow-flower-color font-bold">Débutant</span>
                         </p>
                     </div>
                     <div className="skills-page-content flex flex-col gap-3">

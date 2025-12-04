@@ -350,6 +350,16 @@ body {
                 }
             }
         }
+
+        .red-flower-color{
+            color: #CB0000;
+        }
+        .blue-flower-color{
+            color: #006CCB;
+        }
+        .yellow-flower-color{
+            color: #D9FF00;
+        }
     }
 
     .contact-item{
