@@ -15,9 +15,7 @@ const AboutMe = () => {
                     <Image className={"m-auto mt-10 selfie"} src={"/images/selfie.png"} alt={"selfie"} width={200} height={400}/>
                 </div>
                 <p className="text-center px-14 mt-4">
-                    J’adore coder et je suis toujours à la recherche de nouveaux défis.
-                    <br/>
-                    Depuis mes 12 ans, je sais que je voulais en faire mon métier. Ce que j’aime vraiment, c’est pouvoir créer presque n’importe quoi par moi-même, avec très peu de ressources, juste beaucoup d’imagination.
+                    Depuis mes 12 ans, l’informatique et le développement me passionnent. J’adore coder, relever de nouveaux défis et donner vie à mes idées. Ce qui me motive le plus, c’est la liberté de créer presque n’importe quoi avec très peu de ressources, juste de l’imagination et du code.
                     <br/><br/>
                     Alors si vous cherchez quelqu’un capable de créer le site ou l’application dont vous avez besoin et que vous méritez, ce serait un plaisir de vous aider et de vous accompagner tout au long du processus.
                 </p>
