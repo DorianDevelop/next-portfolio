@@ -24,6 +24,7 @@ body {
     height: 100vh;
     background-image: url("/images/bg_logo.jpg");
     background-size: cover;
+    background-position: center;
 
     .app-grid{
         width: 100%;
@@ -510,6 +511,23 @@ body {
 
     #question{
         width: 100%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    #window{
+        width: 98vw !important;
+        .window-content{
+            height: 85vh !important;
+        }
+    }
+    #window-content{
+        padding: 0.5rem;
+
+        .content{
+            width: 95%;
+        }
     }
 }
 
